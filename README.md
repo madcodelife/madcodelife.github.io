@@ -1,2 +1,2 @@
-# madecodelife.gituhub.io
+# madecodelife.github.io
 Just for fun.

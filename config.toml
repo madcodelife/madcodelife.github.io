@@ -1,6 +1,6 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://blog.madcodelife.me/'
+languageCode = 'zh-CN'
+title = '😡'
 theme = 'PaperMod'
 
 [params]

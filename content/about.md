@@ -13,7 +13,7 @@ summary: about
 
 养了两只猫，一只叫二妹（美短），一只叫三万（金渐层），即将成为父亲，挺期待的。
 
-![Cats](https://res.cloudinary.com/dspnhl2nc/image/upload/v1678201859/cats_akytla.jpg "二妹和三万")
+![Cats](https://res.cloudinary.com/dspnhl2nc/image/upload/v1678201859/blog/cats_akytla.jpg "二妹和三万")
 
 ## FAQ
 1. 为什么 GitHub 和域名叫 **madcodelife**？

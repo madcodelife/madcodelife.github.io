@@ -3,6 +3,7 @@ title: "About"
 layout: "about"
 url: "/about/"
 summary: about
+ShowToc: false
 ---
 
 王一旋，96 出生，**已婚**，喜欢看电影、听音乐，喜欢博客，推荐 [《商业就是这样》](https://podcasts.apple.com/cn/podcast/%E5%95%86%E4%B8%9A%E5%B0%B1%E6%98%AF%E8%BF%99%E6%A0%B7/id1552904790 "商业就是这样")、[《百车全说》](https://podcasts.apple.com/cn/podcast/%E7%99%BE%E8%BD%A6%E5%85%A8%E8%AF%B4%E4%B8%A8%E5%88%AB%E4%BA%BA%E7%A0%94%E7%A9%B6%E8%BD%A6-%E8%80%8C%E6%88%91%E7%A0%94%E7%A9%B6%E4%BD%A0/id1330872827 "百车全说")，最近在听[《梁永安的播客

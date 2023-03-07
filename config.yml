@@ -1,0 +1,33 @@
+baseURL: https://blog.madcodelife.me/
+languageCode: zh-CN
+title: 😡
+theme: PaperMod
+params:
+  comments: true
+  env: production
+  homeInfoParams:
+    Title: Floyd Wang
+  socialIcons:
+    - name: github
+      url: https://github.com/madcodelife
+    - name: twitter
+      url: https://twitter.com/choujiaojiao
+    - name: email
+      url: mailto:gassnake999@gmail.com
+taxonomies:
+  tag: tags
+  category: categories
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 1
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 2
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 3

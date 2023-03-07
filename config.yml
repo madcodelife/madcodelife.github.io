@@ -1,22 +1,46 @@
 baseURL: https://blog.madcodelife.me/
 languageCode: zh-CN
-title: 😡
+title: Digital Notes
 theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
 params:
   comments: true
   env: production
+  author: Floyd Wang
+
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+
   homeInfoParams:
-    Title: Floyd Wang
+    Title: 📒
+    Content: >
+      **数字备忘录**，记性不好，用文字记录下不成熟的想法，结果不重要，重要的是过程。
+
   socialIcons:
     - name: github
       url: https://github.com/madcodelife
     - name: twitter
       url: https://twitter.com/choujiaojiao
-    - name: email
-      url: mailto:gassnake999@gmail.com
+
 taxonomies:
   tag: tags
   category: categories
+
 menu:
   main:
     - identifier: about

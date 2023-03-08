@@ -22,6 +22,7 @@ params:
   author: Floyd Wang
   keywords: [blog, page, Floyd Wang, madcodelife, 博客，技术，分享]
 
+  defaultTheme: auto
   env: production
   comments: true
 

@@ -18,18 +18,23 @@ minify:
   minifyOutput: true
 
 params:
-  comments: true
-  env: production
+  description: Floyd Wang 的博客
   author: Floyd Wang
+  keywords: [blog, page, Floyd Wang, madcodelife, 博客，技术，分享]
+
+  env: production
+  comments: true
 
   ShowReadingTime: true
   ShowCodeCopyButtons: true
   ShowToc: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
 
   homeInfoParams:
     Title: 📒
     Content: >
-      **数字备忘录**，记性不好，用文字记录下不成熟的想法，结果不重要，重要的是过程。
+      **数字备忘录**，用文字记录下不成熟的想法，结果不重要，重要的是过程。
 
   socialIcons:
     - name: github
@@ -38,11 +43,19 @@ params:
       url: https://twitter.com/choujiaojiao
 
   assets:
+    disableHLJS: true
     favicon: https://res.cloudinary.com/dspnhl2nc/image/upload/v1678204485/favicon_qfqxw5.ico
     favicon16x16: https://res.cloudinary.com/dspnhl2nc/image/upload/v1678204485/favicon-16x16_nzxfzt.png
     favicon32x32: https://res.cloudinary.com/dspnhl2nc/image/upload/v1678204485/favicon-32x32_cthpjw.png
     apple_touch_icon: https://res.cloudinary.com/dspnhl2nc/image/upload/v1678204485/apple-touch-icon_uiiibk.png
     safari_pinned_tab: https://res.cloudinary.com/dspnhl2nc/image/upload/v1678204485/apple-touch-icon_uiiibk.png
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
 
 taxonomies:
   tag: tags

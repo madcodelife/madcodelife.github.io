@@ -1,7 +1,6 @@
 ---
 title: "申请了公网 IP"
 date: 2023-03-15T00:12:06+08:0
-publishDate: 2021-08-12T00:14:06+08:00
 draft: false
 tags: ["技术", "公网", "公网 IP", "OpenWrt"]
 categories: ["日常"]

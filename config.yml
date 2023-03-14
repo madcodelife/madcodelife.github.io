@@ -76,19 +76,3 @@ menu:
       name: Archives
       url: /archives/
       weight: 3
-
-frontmatter:
-  date:
-    - date
-    - publishDate
-    - lastmod
-  expiryDate:
-    - expiryDate
-  lastmod:
-    - :git
-    - lastmod
-    - date
-    - publishDate
-  publishDate:
-    - publishDate
-    - date

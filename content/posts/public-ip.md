@@ -1,7 +1,6 @@
 ---
 title: "申请了公网 IP"
-date: 2023-03-15T00:12:06+08:0
-draft: false
+date: 2023-03-15T00:27:50+08:00
 tags: ["技术", "公网", "公网 IP", "OpenWrt"]
 categories: ["日常"]
 ---

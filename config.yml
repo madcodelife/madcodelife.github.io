@@ -26,11 +26,12 @@ params:
   env: production
   comments: true
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowCodeCopyButtons: true
   ShowToc: true
   ShowShareButtons: true
   ShowPostNavLinks: true
+  disableScrollToTop: true
 
   homeInfoParams:
     Title: 📒

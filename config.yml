@@ -36,7 +36,7 @@ params:
   homeInfoParams:
     Title: 📒
     Content: >
-      **数字备忘录**，用文字记录下不成熟的想法，结果不重要，重要的是过程。
+      **数字备忘录**，用文字记录下不成熟的想法。
 
   socialIcons:
     - name: github

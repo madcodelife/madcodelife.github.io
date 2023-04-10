@@ -29,9 +29,9 @@ params:
   ShowReadingTime: false
   ShowCodeCopyButtons: true
   ShowToc: true
+  TocOpen: true
   ShowShareButtons: true
   ShowPostNavLinks: true
-  disableScrollToTop: true
 
   homeInfoParams:
     Title: 📒

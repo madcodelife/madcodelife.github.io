@@ -11,7 +11,7 @@ ShowToc: false
 
 会用代码写点东西，主业是前端，对 Rust 感兴趣，争取未来用 Rust 养活自己，目前在 [LongBridge](https://longbridgeapp.com/ "LongBridge") 工作。
 
-养了两只猫，一只叫二妹（美短），一只叫三万（金渐层），即将成为父亲，挺期待的。
+养了两只猫，一只叫二妹（美短），一只叫三万（金渐层），~~即将成为父亲~~（2023 年 7 月 17 日出生，小名叫七七，是个帅哥），挺期待的。
 
 ![Cats](https://res.cloudinary.com/dspnhl2nc/image/upload/v1678792517/blog/cats_aktht7.jpg "二妹和三万")
 

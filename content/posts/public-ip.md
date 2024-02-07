@@ -4,6 +4,7 @@ date: 2023-03-15T00:27:50+08:00
 tags: ["技术", "公网", "公网 IP", "OpenWrt"]
 categories: ["技术"]
 ---
+
 前不久申请了公网 IP，上周末花了点时间把玩了下，分享下自己的经验。
 
 ## 如何申请公网 IP
@@ -37,18 +38,20 @@ categories: ["技术"]
    这里我用最近搭的 [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) 打个比方，首先按照官方文档教程搭建好服务，然后你就可以通过 `http://127.0.0.1:7860/` 正常访问。
 
    ![intranet](https://res.cloudinary.com/dspnhl2nc/image/upload/v1678809523/blog/Intranet_glcbpu.jpg)
+
 2. **开放端口**
 
    由于 Windows 设备防火墙的限制，你需要开放 `7860` 端口，可以参考 [Windows 防火墙允许禁止端口访问](https://docs.jdcloud.com/cn/virtual-machines/windows-firewall-allows-port-access-to-be-disabled)。
 
    ![Firewall](https://res.cloudinary.com/dspnhl2nc/image/upload/v1678809524/blog/firewall_l7tpgm.jpg)
+
 3. **转发端口**
 
    我是华为路由器，在路由器「更多功能」- 「安全设置」- 「NAT 服务」里面新增一条服务，指定对应端口，不同路由器用法可以自行 Google。由于我家里有软路由，所以这里需要额外在软路由再配置一次端口转发，方法也差不多。
 
    ![NAT](https://res.cloudinary.com/dspnhl2nc/image/upload/v1678809524/blog/nat_wkqvok.jpg)
 
-👏🎉然后就可以通过外网 IP 访问了。
+👏🎉 然后就可以通过外网 IP 访问了。
 
 ![ip](https://res.cloudinary.com/dspnhl2nc/image/upload/v1678809524/blog/ip_jss8sf.jpg)
 

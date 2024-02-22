@@ -1,4 +1,6 @@
 ---
+sitemap:
+  priority: 0.8
 title: "About"
 layout: "about"
 url: "/about/"

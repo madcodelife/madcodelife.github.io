@@ -41,7 +41,7 @@ params:
     - name: github
       url: https://github.com/madcodelife
     - name: twitter
-      url: https://twitter.com/choujiaojiao
+      url: https://twitter.com/madcodelife
 
   assets:
     disableHLJS: true

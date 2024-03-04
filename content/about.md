@@ -14,7 +14,7 @@ ShowToc: false
 
 养了两只猫，一只叫二妹（美短），一只叫三万（金渐层），~~即将成为父亲~~（2023 年 7 月 17 日出生，小名叫七七，是个帅哥），挺期待的。
 
-![Cats](https://res.cloudinary.com/dspnhl2nc/image/upload/v1678792517/blog/cats_aktht7.jpg "二妹和三万")
+![Cats](https://p.madcodelife.com/blog/2024/03/909d7ec591c6c6c5b66c09645487870b.jpg "二妹和三万")
 
 ## FAQ
 

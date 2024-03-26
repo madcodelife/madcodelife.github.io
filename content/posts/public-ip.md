@@ -13,11 +13,11 @@ categories: ["技术"]
 
 ## 怎么判断是否是公网 IP
 
-1. **通过访问 [ip.cn](https://ip.cn/)，可以看到对外的 IP：**
+**1. 通过访问 [ip.cn](https://ip.cn/)，可以看到对外的 IP：**
 
 ![ip.cn](https://p.madcodelife.com/blog/2024/03/b85e47d6af2a64451f191efb7aa2e935.png)
 
-2. **查看路由器或者软路由的 WAN IP。**
+**2. 查看路由器或者软路由的 WAN IP。**
 
 由于我家网络是由软路由分发的，所以只需要确实软路由就好了：
 

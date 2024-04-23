@@ -31,6 +31,10 @@ repoId = 'R_kgDOImHxVg'
 category = 'General'
 categoryId = 'DIC_kwDOImHxVs4CemCQ'
 mapping = 'title'
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = 'bottom'
 theme = 'preferred_color_scheme'
 lang = 'zh-CN'
 

@@ -1,0 +1,77 @@
+baseURL = "https://madcodelife.com/"
+author = "Floyd Wang"
+title = "Digital Notes"
+theme = "paper"
+paginate = 10
+languageCode = "zh-CN"
+DefaultContentLanguage = "zh-cn"
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+
+googleAnalytics = "G-N5DMQTRN38"
+
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+[params]
+color = 'gray'
+
+twitter = 'madcodelife'
+github = 'madcodelife'
+
+avatar = 'gassnake999@gmail.com'
+name = 'Floyd Wang'
+bio = '用文字记录下不成熟的想法。'
+
+[params.giscus]
+repo = 'madcodelife/madcodelife.github.io'
+repoId = 'R_kgDOImHxVg'
+category = 'General'
+categoryId = 'DIC_kwDOImHxVs4CemCQ'
+mapping = 'title'
+theme = 'preferred_color_scheme'
+lang = 'zh-CN'
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[menu]
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services]
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true

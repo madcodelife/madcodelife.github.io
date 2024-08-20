@@ -3,6 +3,7 @@ title: "Vue Router 过渡动效"
 date: 2024-03-26T16:55:11+08:00
 tags: ["Vue", "Vue Router", "动画", "CSS", "前端"]
 categories: ["技术"]
+comments: true
 ---
 
 最近在做 H5 PWA 项目，技术栈是 Vue。

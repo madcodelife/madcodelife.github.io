@@ -3,6 +3,7 @@ title: "把图床迁移到了 R2"
 date: 2024-03-04T16:42:42+08:00
 tags: ["技术", "图床"]
 categories: ["技术"]
+comments: true
 ---
 
 把图床从 [Cloudinary](https://cloudinary.com/) 迁移到了 [Cloudflare R2](https://www.cloudflare.com/developer-platform/r2)，也没什么特别的原因，只是刚好看到有免费的额度，大厂嘛，感觉可能更靠谱，就迁移了，目前资源不多，很快就搞好了，这是收费标准：

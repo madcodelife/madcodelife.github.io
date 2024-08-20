@@ -3,6 +3,7 @@ title: "种一棵树最好的时间是十年前，其次是现在"
 date: 2023-03-06T18:24:50+08:00
 tags: ["随想", "目标", "日记"]
 categories: ["日常"]
+comments: true
 ---
 
 > _"The best time to plant a tree is 20 years ago. The second-best time is now."_

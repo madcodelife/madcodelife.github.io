@@ -1,81 +1,38 @@
-baseURL = "https://madcodelife.com/"
-author = "Floyd Wang"
-title = "Digital Notes"
-theme = "paper"
-paginate = 10
-languageCode = "zh-CN"
 DefaultContentLanguage = "zh-cn"
+author = "Floyd Wang"
+baseURL = "https://madcodelife.com/"
+languageCode = "zh-CN"
+paginate = 10
+theme = "hugo-bearblog"
+title = "Digital Notes"
 
 enableInlineShortcodes = true
 enableRobotsTXT = true
 
 googleAnalytics = "G-N5DMQTRN38"
 
-# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
-# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
-ignoreErrors = ["error-remote-getjson"]
-
 [params]
-color = 'gray'
-
-twitter = 'madcodelife'
-github = 'madcodelife'
-
-avatar = 'gassnake999@gmail.com'
-name = 'Floyd Wang'
-bio = '用文字记录下不成熟的想法。'
+description = "越努力越幸运"
 
 [params.giscus]
-repo = 'madcodelife/madcodelife.github.io'
-repoId = 'R_kgDOImHxVg'
 category = 'General'
 categoryId = 'DIC_kwDOImHxVs4CemCQ'
-mapping = 'title'
-strict = "0"
-reactionsEnabled = "1"
 emitMetadata = "0"
 inputPosition = 'bottom'
-theme = 'preferred_color_scheme'
 lang = 'zh-CN'
+mapping = 'title'
+reactionsEnabled = "1"
+repo = 'madcodelife/madcodelife.github.io'
+repoId = 'R_kgDOImHxVg'
+strict = "0"
+theme = 'preferred_color_scheme'
 
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
 
-[menu]
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 10
-
 [taxonomies]
 category = "categories"
-tag = "tags"
 series = "series"
-
-[privacy]
-[privacy.vimeo]
-disabled = false
-simple = true
-
-[privacy.twitter]
-disabled = false
-enableDNT = true
-simple = true
-
-[privacy.instagram]
-disabled = false
-simple = true
-
-[privacy.youtube]
-disabled = false
-privacyEnhanced = true
-
-[services]
-[services.instagram]
-disableInlineCSS = true
-
-[services.twitter]
-disableInlineCSS = true
+tag = "tags"

@@ -3,6 +3,7 @@ title: "申请了公网 IP"
 date: 2023-03-15T00:27:50+08:00
 tags: ["技术", "公网", "公网 IP", "OpenWrt"]
 categories: ["技术"]
+comments: true
 ---
 
 前不久申请了公网 IP，上周末花了点时间把玩了下，分享下自己的经验。

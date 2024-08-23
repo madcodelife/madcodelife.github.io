@@ -9,10 +9,9 @@ title = "Digital Notes"
 enableInlineShortcodes = true
 enableRobotsTXT = true
 
-googleAnalytics = "G-N5DMQTRN38"
-
 [params]
 description = "越努力越幸运"
+googleAnalytics = "G-N5DMQTRN38"
 
 [params.giscus]
 category = 'General'

@@ -20,7 +20,7 @@ comments: true
 
 **2. 查看路由器或者软路由的 WAN IP。**
 
-由于我家网络是由软路由分发的，所以只需要确实软路由就好了：
+由于我家网络是由软路由分发的，所以只需要确认软路由就好了：
 
 ![软路由](https://p.madcodelife.com/blog/2024/03/41fd8a4ac8fac7e8df35029cee1b2f28.jpg)
 

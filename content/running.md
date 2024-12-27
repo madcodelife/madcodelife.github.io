@@ -7,6 +7,8 @@ menu: "main"
 
 <iframe height="454" width="100%" style="max-width: 376px;" frameborder="0" allowtransparency="true" scrolling="no" src="https://www.strava.com/athletes/133976397/latest-rides/0ec249df684c38d032ac12906fd90ac29076c478"></iframe>
 
+[Running Page](https://running.madcodelife.com)
+
 ## Match Record
 <!-- markdownlint-disable MD013 -->
 | 时间       | 国家 | 城市 | 比赛名称                                                                                       | 成绩                                                                                       |

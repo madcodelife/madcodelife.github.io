@@ -1,8 +1,8 @@
 ---
 title: "End of 2023"
 date: 2024-02-07T16:53:00+08:00
-tags: ["随想", "目标", "日记"]
-categories: ["日常"]
+tags: ["随想"]
+categories: ["随想"]
 comments: true
 ---
 

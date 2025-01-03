@@ -1,8 +1,8 @@
 ---
 title: "种一棵树最好的时间是十年前，其次是现在"
 date: 2023-03-06T18:24:50+08:00
-tags: ["随想", "目标", "日记"]
-categories: ["日常"]
+tags: ["随想"]
+categories: ["随想"]
 comments: true
 ---
 

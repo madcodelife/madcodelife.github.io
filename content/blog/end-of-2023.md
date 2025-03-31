@@ -22,4 +22,4 @@ comments: true
 
 写的时候发现这篇文章不应该叫 End of 2023，应该叫 Start of 2024，最后放一张七七的照片，新的一年，继续加油吧！
 
-![77](https://p.madcodelife.com/blog/2024/03/8d2bb671d84df3ec2613d1d3565e2453.jpg)
+![77](https://assets.madcodelife.com/blog/2024/03/8d2bb671d84df3ec2613d1d3565e2453.jpg)

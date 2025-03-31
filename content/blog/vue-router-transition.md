@@ -40,7 +40,7 @@ r .fade-leave-to {
 再进行路由跳转的时候已经可以看到过渡效果了：
 
 <video controls style="width: min(calc(100vw - 28px), 390px);">
-  <source src="https://p.madcodelife.com/blog/2024/03/efff01316cea7426d21639f67ab8cf4a.mov" type="video/mp4">
+  <source src="https://assets.madcodelife.com/blog/2024/03/efff01316cea7426d21639f67ab8cf4a.mov" type="video/mp4">
 </video>
 
 但这个效果不是我们想要的，我们需要的是类似 iOS 页面栈的效果，所以还需要改造下动画：
@@ -82,7 +82,7 @@ r .fade-leave-to {
 试下效果：
 
 <video controls style="width: min(calc(100vw - 28px), 390px);">
-  <source src="https://p.madcodelife.com/blog/2024/03/c19c1f8f550097cca5e2a694f3d1c269.mov" type="video/mp4">
+  <source src="https://assets.madcodelife.com/blog/2024/03/c19c1f8f550097cca5e2a694f3d1c269.mov" type="video/mp4">
 </video>
 
 已经可以看到初步的效果了，还有一个细节需要处理，就是没办法区分前进和返回，我们需要自定义动画。
@@ -166,7 +166,7 @@ router.afterEach(() => {
 最终效果：
 
 <video controls style="width: min(calc(100vw - 28px), 390px);">
-  <source src="https://p.madcodelife.com/blog/2024/03/b22079812a48a20bd5f96d8cb099e387.mov" type="video/mp4">
+  <source src="https://assets.madcodelife.com/blog/2024/03/b22079812a48a20bd5f96d8cb099e387.mov" type="video/mp4">
 </video>
 
 ## 更多

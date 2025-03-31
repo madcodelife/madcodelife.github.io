@@ -2,12 +2,14 @@ DefaultContentLanguage = "zh-cn"
 author = "Floyd Wang"
 baseURL = "https://madcodelife.com/"
 languageCode = "zh-CN"
-paginate = 10
 theme = "hugo-bearblog"
 title = "Digital Notes"
 
 enableInlineShortcodes = true
 enableRobotsTXT = true
+
+[pagination]
+pagerSize = 10
 
 [params]
 description = "越努力越幸运"

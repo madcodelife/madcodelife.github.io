@@ -15,5 +15,5 @@ comments: true
 | Class B operations: read existing state | 10,000,000 / month | $0.36 / million     |
 
 装了个 [PicList](https://piclist.cn/)，用来管理图片，可以批量上传、编辑、删除，还能查看已有的图片，用起来也挺方便的，支持大部分的图床，有需要可以试试。
-![上传界面](https://p.madcodelife.com/blog/2024/03/3b422b811e377080f9d271b5909b6f15.jpeg)
-![内置图床](https://p.madcodelife.com/blog/2024/03/126347d21551830bb14247ced7022ea0.jpeg)
+![上传界面](https://assets.madcodelife.com/blog/2024/03/3b422b811e377080f9d271b5909b6f15.jpeg)
+![内置图床](https://assets.madcodelife.com/blog/2024/03/126347d21551830bb14247ced7022ea0.jpeg)

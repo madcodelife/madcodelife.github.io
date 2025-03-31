@@ -15,7 +15,7 @@ pagerSize = 10
 description = "越努力越幸运"
 googleAnalytics = "G-N5DMQTRN38"
 images = [
-  'https://p.madcodelife.com/blog/2024/11/af2307cfa5771e2e599f7d1fc7535982.jpeg',
+  'https://assets.madcodelife.com/blog/2024/11/af2307cfa5771e2e599f7d1fc7535982.jpeg',
 ]
 
 [params.giscus]

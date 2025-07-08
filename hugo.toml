@@ -32,6 +32,11 @@ strict = "0"
 theme = 'preferred_color_scheme'
 
 [markup]
+[markup.highlight]
+codeFences = true
+lineNos = true
+lineNumbersInTable = false
+style = 'friendly'
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true

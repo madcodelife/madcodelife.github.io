@@ -1,7 +1,9 @@
----
-title: "Running"
-menu: "main"
----
++++
+title = "Running"
+menu = "main"
+weight = 3
++++
+
 
 ## Strava
 

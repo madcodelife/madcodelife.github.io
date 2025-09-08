@@ -3,7 +3,7 @@ author = "Floyd Wang"
 baseURL = "https://madcodelife.com/"
 languageCode = "zh-CN"
 theme = "hugo-bearblog"
-title = "Digital Notes"
+title = "1001101"
 
 enableInlineShortcodes = true
 enableRobotsTXT = true

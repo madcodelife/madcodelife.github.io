@@ -43,7 +43,7 @@ comments = true
 
 ## 跑得怎么样
 
-一共参加了两场比赛：一次半马（1:33:29），一次全马（3:09:58）。可以在 [Running Page](https://running.madcodelife.com) 查看我的比赛和 Strava 记录。
+一共参加了两场比赛：一次半马（1:33:29），一次全马（3:09:58）。可以在 [Running Page](https://www.madcodelife.com/running) 查看我的比赛和 Strava 记录。
 
 <div style="text-align: center;">
   <img src="https://p.madcodelife.com/blog/2025/09/e7f605fb06358817fd9ca0e3d9f8631f.PNG" width="375" alt="Record">

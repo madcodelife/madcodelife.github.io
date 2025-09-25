@@ -1,8 +1,8 @@
 ---
 title: "Vue Router 过渡动效"
 date: 2024-03-26T16:55:11+08:00
-tags: ["技术"]
-categories: ["技术"]
+tags: ["code"]
+categories: ["code"]
 comments: true
 ---
 

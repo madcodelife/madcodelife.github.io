@@ -1,8 +1,8 @@
 +++
 title = "聊聊跑步"
 date = "2025-09-09T08:34:00+08:00"
-tags = ["随想"]
-categories = ["随想"]
+tags = ["thoughts"]
+categories = ["thoughts"]
 comments = true
 +++
 

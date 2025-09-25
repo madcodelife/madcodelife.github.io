@@ -11,6 +11,12 @@ enableRobotsTXT = true
 [pagination]
 pagerSize = 10
 
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+[permalinks]
+blog = "/:slug/"
+tags = "/blog/:slug"
+
 [params]
 description = "越努力越幸运"
 googleAnalytics = "G-N5DMQTRN38"

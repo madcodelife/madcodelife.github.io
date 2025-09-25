@@ -1,8 +1,8 @@
 ---
 title: "把图床迁移到了 R2"
 date: 2024-03-04T16:42:42+08:00
-tags: ["技术"]
-categories: ["技术"]
+tags: ["code"]
+categories: ["code"]
 comments: true
 ---
 

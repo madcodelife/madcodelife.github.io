@@ -1,8 +1,8 @@
 ---
 title: "申请了公网 IP"
 date: 2023-03-15T00:27:50+08:00
-tags: ["技术"]
-categories: ["技术"]
+tags: ["code"]
+categories: ["code"]
 comments: true
 ---
 

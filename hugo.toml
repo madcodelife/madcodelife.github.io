@@ -11,10 +11,7 @@ enableRobotsTXT = true
 [pagination]
 pagerSize = 10
 
-disableKinds = ["taxonomy"]
-ignoreErrors = ["error-disable-taxonomy"]
 [permalinks]
-blog = "/:slug/"
 tags = "/blog/:slug"
 
 [params]

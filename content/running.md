@@ -5,11 +5,9 @@ weight = 3
 +++
 
 
-## Strava
+## Running
 
-<iframe height="454" width="100%" style="max-width: 376px;" frameborder="0" allowtransparency="true" scrolling="no" src="https://www.strava.com/athletes/133976397/latest-rides/0ec249df684c38d032ac12906fd90ac29076c478"></iframe>
-
-[Running Page](https://running.madcodelife.com)
+{{< running >}}
 
 ## Match Record
 <!-- markdownlint-disable MD013 -->

@@ -12,3 +12,7 @@
   gtag('config', '{{ .Site.Params.googleAnalytics }}')
 </script>
 {{ end }}
+
+{{ if .HasShortcode "running" }}
+{{ partial "running/styles.html" . }}
+{{ end }}

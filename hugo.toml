@@ -38,6 +38,12 @@ repoId = 'R_kgDOImHxVg'
 strict = "0"
 theme = 'preferred_color_scheme'
 
+# 跑步数据在构建时远程拉取（layouts/shortcodes/running.html），
+# 本地开发时缓存一天，避免每次 rebuild 都下载几 MB 的 activities.json
+[caches]
+[caches.getresource]
+maxAge = "24h"
+
 [markup]
 [markup.highlight]
 codeFences = true

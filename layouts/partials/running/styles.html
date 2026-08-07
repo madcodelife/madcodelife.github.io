@@ -1,0 +1,87 @@
+{{- /*
+  /running 页面的样式。由 custom_head.html 在需要的页面注入到 <head>，
+  判定条件是页面是否用到 running / datatable 这两个 shortcode。
+
+  注：Go 的 html/template 对 <style> 是上下文感知的，会剥掉 CSS 注释，
+  所以下面的注释只存在于源文件，不会出现在产物里。
+*/ -}}
+<style>
+  .run-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 30px;
+    margin: 1.2em 0;
+  }
+
+  .run-stats div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+  }
+
+  .run-stats b {
+    font-family: monospace;
+    font-size: 1.3em;
+    color: var(--heading-color);
+  }
+
+  .run-stats small {
+    font-size: 0.78em;
+    opacity: 0.7;
+  }
+
+  /* 窄屏放不下时横向滚动，而不是把单元格折成两行 */
+  .data-table {
+    margin: 1.2em 0;
+    overflow-x: auto;
+  }
+
+  /* 主题的 `table { width: 100% }` 会把窄列摊满 720px，这里让表格贴合内容 */
+  .data-table table {
+    width: auto;
+    border-collapse: collapse;
+  }
+
+  .data-table th {
+    font-size: 0.78em;
+    font-weight: normal;
+    text-align: left;
+    opacity: 0.6;
+    padding-bottom: 4px;
+  }
+
+  .data-table td {
+    font-family: monospace;
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 3px 0;
+  }
+
+  .data-table th + th,
+  .data-table td + td {
+    padding-left: 18px;
+  }
+
+  .data-table time,
+  .data-table .run-hr {
+    opacity: 0.7;
+  }
+
+  .run-foot a {
+    margin-right: 16px;
+  }
+
+  @media (max-width: 460px) {
+    /* 只收跑步表的心率列；比赛记录的末列是成绩，不能藏 */
+    .run-recent .run-hr,
+    .run-recent th:last-child {
+      display: none;
+    }
+
+    .data-table th + th,
+    .data-table td + td {
+      padding-left: 12px;
+    }
+  }
+
+</style>

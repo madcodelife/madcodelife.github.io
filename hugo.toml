@@ -1,7 +1,7 @@
 DefaultContentLanguage = "zh-cn"
 author = "Floyd Wang"
 baseURL = "https://madcodelife.com/"
-languageCode = "zh-CN"
+locale = "zh-CN"
 theme = "hugo-bearblog"
 title = "11011"
 
@@ -11,7 +11,11 @@ enableRobotsTXT = true
 [pagination]
 pagerSize = 10
 
+# 必须写成 [permalinks.term]：扁平写法 `tags = "..."` 过去只作用于 taxonomy 词条页，
+# 新版 Hugo 也会拿它去匹配普通页面，导致空文件 content/tags.md（slug 为空）
+# 被解析到 /blog/，把区块列表页覆盖成空白。
 [permalinks]
+[permalinks.term]
 tags = "/blog/:slug"
 
 [params]

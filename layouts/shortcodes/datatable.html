@@ -1,0 +1,10 @@
+{{- /*
+  把内部的 Markdown 表格包一层 .data-table，套用和跑步数据表一致的样式。
+
+  用法：{{< datatable >}} …markdown 表格… {{< /datatable >}}
+  可选 class 参数用于挂载表格专属的窄屏规则：
+        {{< datatable class="match-record" >}}
+*/ -}}
+<div class="data-table{{ with .Get "class" }} {{ . }}{{ end }}">
+{{ .Page.RenderString (dict "display" "block") .Inner }}
+</div>

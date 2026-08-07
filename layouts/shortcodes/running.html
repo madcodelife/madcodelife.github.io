@@ -1,0 +1,95 @@
+{{- /*
+  跑步数据卡片。
+
+  数据源是 running_page 仓库每日同步产出的 activities.json（上游来自 COROS），
+  在构建时拉取并聚合，因此站点里不落任何数据文件、也不需要 secret。
+  拉取失败时只告警、不中断构建，页面退化成一行提示加外链。
+*/ -}}
+
+{{- $url := "https://raw.githubusercontent.com/madcodelife/running_page/master/src/static/activities.json" -}}
+{{- $stravaURL := "https://www.strava.com/athletes/133976397" -}}
+
+{{- $activities := slice -}}
+{{- $ok := false -}}
+{{- with try (resources.GetRemote $url) -}}
+  {{- with .Err -}}
+    {{- warnf "shortcode running: 拉取 activities.json 失败: %s" . -}}
+  {{- else with .Value -}}
+    {{- $activities = . | transform.Unmarshal -}}
+    {{- $ok = true -}}
+  {{- else -}}
+    {{- warnf "shortcode running: 拉取 activities.json 失败: 资源不存在 (%s)" $url -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 只要跑步，骑行 / 游泳 / 徒步等其他运动类型丢弃 */ -}}
+{{- $runs := where $activities "type" "Run" -}}
+
+{{- /* 归一化：moving_time 形如 "0:50:38.390000"，统一换算成秒 */ -}}
+{{- $norm := slice -}}
+{{- range $runs -}}
+  {{- $p := split .moving_time ":" -}}
+  {{- if eq (len $p) 3 -}}
+    {{- $sec := add (add (mul (float (index $p 0)) 3600) (mul (float (index $p 1)) 60)) (float (index $p 2)) -}}
+    {{- if and (gt $sec 0.0) (gt .distance 0.0) -}}
+      {{- $norm = $norm | append (dict
+        "dt" .start_date_local
+        "year" (substr .start_date_local 0 4)
+        "km" (div .distance 1000.0)
+        "sec" $sec
+        "hr" .average_heartrate) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if and $ok $norm -}}
+
+  {{- $year := now.Format "2006" -}}
+  {{- $thisYear := where $norm "year" $year -}}
+
+  {{- $yearKm := 0.0 -}}{{- $yearSec := 0.0 -}}
+  {{- range $thisYear -}}
+    {{- $yearKm = add $yearKm .km -}}
+    {{- $yearSec = add $yearSec .sec -}}
+  {{- end -}}
+
+  {{- $allKm := 0.0 -}}
+  {{- range $norm -}}{{- $allKm = add $allKm .km -}}{{- end -}}
+
+  <div class="run-stats">
+    <div><b>{{ printf "%.1f" $yearKm }}</b><small>{{ $year }} 公里</small></div>
+    <div><b>{{ len $thisYear }}</b><small>{{ $year }} 次数</small></div>
+    <div><b>{{ if gt $yearKm 0.0 }}{{ partial "running/pace" (div $yearSec $yearKm) }}{{ else }}—{{ end }}</b><small>{{ $year }} 平均配速</small></div>
+    <div><b>{{ printf "%.1f" $allKm }}</b><small>累计公里</small></div>
+    <div><b>{{ len $norm }}</b><small>累计次数</small></div>
+  </div>
+
+  <div class="data-table run-recent">
+    <table>
+      <thead>
+        <tr><th>日期</th><th>距离</th><th>时长</th><th>配速</th><th>心率</th></tr>
+      </thead>
+      <tbody>
+        {{- range first 5 (sort $norm "dt" "desc") }}
+        <tr>
+          <td><time>{{ substr .dt 0 10 }}</time></td>
+          <td>{{ printf "%.2f" .km }} km</td>
+          <td>{{ partial "running/duration" .sec }}</td>
+          <td>{{ partial "running/pace" (div .sec .km) }}</td>
+          <td class="run-hr">{{ with .hr }}{{ int . }} bpm{{ end }}</td>
+        </tr>
+        {{- end }}
+      </tbody>
+    </table>
+  </div>
+
+{{- else -}}
+
+  <p class="run-fallback">跑步数据暂时拉取不到，去 <a href="{{ $stravaURL }}">Strava</a> 看吧。</p>
+
+{{- end }}
+
+<p class="run-foot">
+  <a href="{{ $stravaURL }}">Strava</a>
+</p>
+

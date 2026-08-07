@@ -13,6 +13,6 @@
 </script>
 {{ end }}
 
-{{ if .HasShortcode "running" }}
+{{ if or (.HasShortcode "running") (.HasShortcode "datatable") }}
 {{ partial "running/styles.html" . }}
 {{ end }}

@@ -82,6 +82,26 @@
     .data-table td + td {
       padding-left: 12px;
     }
+
+    .match-record td {
+      font-size: 13px;
+    }
   }
 
+  /* 比赛表六列 nowrap 约需 610px，窄于此成绩列会被挤出视口。
+     整表放开折行会把「中国」「半马」这类两三字的列压成一字一行，很难看；
+     所以隐去恒为「中国」的国家列和信息量最低的城市列，其余列维持 nowrap，
+     只让最长的「比赛名称」折行。 */
+  @media (max-width: 700px) {
+    .match-record th:nth-child(2),
+    .match-record td:nth-child(2),
+    .match-record th:nth-child(3),
+    .match-record td:nth-child(3) {
+      display: none;
+    }
+
+    .match-record td:nth-child(4) {
+      white-space: normal;
+    }
+  }
 </style>

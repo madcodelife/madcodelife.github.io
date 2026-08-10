@@ -4,5 +4,7 @@
     "env": {
       "HUGO_VERSION": "0.164.0"
     }
-  }
+  },
+  "buildCommand": "hugo --minify --printPathWarnings --gc",
+  "outputDirectory": "public"
 }

@@ -14,3 +14,4 @@ weight = 1
 
 <a href="https://twitter.com/madcodelife" target="_blank">Twitter</a>
 <a href="https://github.com/madcodelife" target="_blank">Github</a>
+<a href="https://running.madcodelife.com" target="_blank">Running Page</a>

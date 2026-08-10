@@ -104,5 +104,9 @@ jobs:
             echo "::warning::VERCEL_DEPLOY_HOOK is not set; madcodelife.com will not be rebuilt."
             exit 0
           fi
-          curl --fail --silent --show-error --request POST "$DEPLOY_HOOK" --output /dev/null
-          echo "Vercel rebuild requested."
+          # Log the response so the run is auditable. Vercel answers with the
+          # queued job's id and state and nothing sensitive, which is the only
+          # evidence that a build was really created -- hook-triggered builds
+          # leave no GitHub deployment record to check against afterwards.
+          response=$(curl --fail --silent --show-error --request POST "$DEPLOY_HOOK")
+          echo "Vercel accepted the hook: $response"

@@ -9,10 +9,21 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-  # Rebuild daily so the running stats on /running stay fresh.
-  # madcodelife/running_page syncs at 00:00 UTC; leave it 90 minutes to finish.
+  # Primary trigger for refreshing /running: madcodelife/running_page fires this
+  # right after it commits new activities, so there is no guessing about when
+  # upstream finishes.
+  repository_dispatch:
+    types: [running-data-updated]
+
+  # Fallback in case the dispatch above never arrives.
+  #
+  # Deliberately late in the day: both this workflow and the upstream sync are
+  # cron-scheduled, and GitHub delays scheduled runs by an unpredictable 1-2
+  # hours. Upstream declares 00:00 UTC but has committed as late as 03:37, so an
+  # early fallback can easily run before upstream lands and leave the page a
+  # full day stale.
   schedule:
-    - cron: "30 1 * * *"
+    - cron: "0 5 * * *"
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -74,3 +85,24 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  # madcodelife.com is served by Vercel, which only builds on push. Nudge it for
+  # the triggers that do not involve one, otherwise the running stats there stay
+  # frozen at whatever the last commit produced.
+  #
+  # Skipped silently when VERCEL_DEPLOY_HOOK is absent so this workflow can be
+  # merged before the secret exists.
+  notify-vercel:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel deploy hook
+        env:
+          DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$DEPLOY_HOOK" ]; then
+            echo "::warning::VERCEL_DEPLOY_HOOK is not set; madcodelife.com will not be rebuilt."
+            exit 0
+          fi
+          curl --fail --silent --show-error --request POST "$DEPLOY_HOOK" --output /dev/null
+          echo "Vercel rebuild requested."

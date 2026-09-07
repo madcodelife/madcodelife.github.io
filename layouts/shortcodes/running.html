@@ -8,6 +8,7 @@
 
 {{- $url := "https://raw.githubusercontent.com/madcodelife/running_page/master/src/static/activities.json" -}}
 {{- $stravaURL := "https://www.strava.com/athletes/133976397" -}}
+{{- $runningPageURL := "https://running.madcodelife.com" -}}
 
 {{- $activities := slice -}}
 {{- $ok := false -}}
@@ -90,6 +91,7 @@
 {{- end }}
 
 <p class="run-foot">
+  <a href="{{ $runningPageURL }}">Running Page</a>
   <a href="{{ $stravaURL }}">Strava</a>
 </p>
 

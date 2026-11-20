@@ -1,3 +1,10 @@
+{{- /* 告诉搜索引擎每个页面的其他语言版本，x-default 指向英文 */ -}}
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}" />
+{{- if eq .Language.Lang (index hugo.Sites 0).Language.Lang }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+{{- end }}
+{{- end }}
 {{ if .Site.Params.googleAnalytics }}
 <script
   async

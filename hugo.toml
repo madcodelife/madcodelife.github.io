@@ -1,9 +1,12 @@
-DefaultContentLanguage = "zh-cn"
 author = "Floyd Wang"
 baseURL = "https://madcodelife.com/"
-locale = "zh-CN"
 theme = "hugo-bearblog"
 title = "11011"
+
+# 英文优先：英文挂在根路径，中文在 /zh/ 下。
+# 内容按文件名区分语言，`post.md` 是英文，`post.zh.md` 是中文。
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 
 enableInlineShortcodes = true
 enableRobotsTXT = true
@@ -18,8 +21,24 @@ pagerSize = 10
 [permalinks.term]
 tags = "/blog/:slug"
 
-[params]
+[languages]
+[languages.en]
+label = "English"
+locale = "en-US"
+weight = 1
+[languages.en.params]
+description = "The harder I work, the luckier I get."
+giscusLang = "en"
+
+[languages.zh]
+label = "中文"
+locale = "zh-CN"
+weight = 2
+[languages.zh.params]
 description = "越努力越幸运"
+giscusLang = "zh-CN"
+
+[params]
 googleAnalytics = "G-N5DMQTRN38"
 images = [
   'https://assets.madcodelife.com/blog/2024/11/af2307cfa5771e2e599f7d1fc7535982.jpeg',
@@ -30,8 +49,8 @@ category = 'General'
 categoryId = 'DIC_kwDOImHxVs4CemCQ'
 emitMetadata = "0"
 inputPosition = 'bottom'
-lang = 'zh-CN'
-mapping = 'title'
+# 评论按中文标题归档（见 layouts/partials/footer.html），中英文版本共用同一个 discussion
+mapping = 'specific'
 reactionsEnabled = "1"
 repo = 'madcodelife/madcodelife.github.io'
 repoId = 'R_kgDOImHxVg'

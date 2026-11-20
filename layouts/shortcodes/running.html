@@ -58,17 +58,17 @@
   {{- range $norm -}}{{- $allKm = add $allKm .km -}}{{- end -}}
 
   <div class="run-stats">
-    <div><b>{{ printf "%.1f" $yearKm }}</b><small>{{ $year }} 公里</small></div>
-    <div><b>{{ len $thisYear }}</b><small>{{ $year }} 次数</small></div>
-    <div><b>{{ if gt $yearKm 0.0 }}{{ partial "running/pace" (div $yearSec $yearKm) }}{{ else }}—{{ end }}</b><small>{{ $year }} 平均配速</small></div>
-    <div><b>{{ printf "%.1f" $allKm }}</b><small>累计公里</small></div>
-    <div><b>{{ len $norm }}</b><small>累计次数</small></div>
+    <div><b>{{ printf "%.1f" $yearKm }}</b><small>{{ i18n "runYearKm" $year }}</small></div>
+    <div><b>{{ len $thisYear }}</b><small>{{ i18n "runYearCount" $year }}</small></div>
+    <div><b>{{ if gt $yearKm 0.0 }}{{ partial "running/pace" (div $yearSec $yearKm) }}{{ else }}—{{ end }}</b><small>{{ i18n "runYearPace" $year }}</small></div>
+    <div><b>{{ printf "%.1f" $allKm }}</b><small>{{ i18n "runTotalKm" }}</small></div>
+    <div><b>{{ len $norm }}</b><small>{{ i18n "runTotalCount" }}</small></div>
   </div>
 
   <div class="data-table run-recent">
     <table>
       <thead>
-        <tr><th>日期</th><th>距离</th><th>时长</th><th>配速</th><th>心率</th></tr>
+        <tr><th>{{ i18n "runDate" }}</th><th>{{ i18n "runDistance" }}</th><th>{{ i18n "runDuration" }}</th><th>{{ i18n "runPace" }}</th><th>{{ i18n "runHeartRate" }}</th></tr>
       </thead>
       <tbody>
         {{- range first 5 (sort $norm "dt" "desc") }}
@@ -86,7 +86,7 @@
 
 {{- else -}}
 
-  <p class="run-fallback">跑步数据暂时拉取不到，去 <a href="{{ $stravaURL }}">Strava</a> 看吧。</p>
+  <p class="run-fallback">{{ i18n "runFallback" $stravaURL | safeHTML }}</p>
 
 {{- end }}
 

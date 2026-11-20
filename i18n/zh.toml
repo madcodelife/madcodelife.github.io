@@ -1,0 +1,29 @@
+[filteringFor]
+other = '筛选：「{{ . }}」'
+[removeFilter]
+other = "取消筛选"
+[noPosts]
+other = "还没有文章"
+
+[runYearKm]
+other = "{{ . }} 公里"
+[runYearCount]
+other = "{{ . }} 次数"
+[runYearPace]
+other = "{{ . }} 平均配速"
+[runTotalKm]
+other = "累计公里"
+[runTotalCount]
+other = "累计次数"
+[runDate]
+other = "日期"
+[runDistance]
+other = "距离"
+[runDuration]
+other = "时长"
+[runPace]
+other = "配速"
+[runHeartRate]
+other = "心率"
+[runFallback]
+other = '跑步数据暂时拉取不到，去 <a href="{{ . }}">Strava</a> 看吧。'

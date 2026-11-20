@@ -1,70 +1,70 @@
 +++
-title = "聊聊跑步"
+title = "On Running"
 date = "2025-09-09T08:34:00+08:00"
 tags = ["thoughts"]
 categories = ["thoughts"]
 comments = true
 +++
 
-一直想写一篇关于跑步的文章，一是因为懒，二是没想好主题；当然，主要还是因为懒。
+I've wanted to write about running for a while. One reason I didn't is laziness, the other is that I hadn't settled on an angle; mostly, of course, laziness.
 
-看了下自己的运动记录，从 2024 年 4 月开始跑步，到现在一年零 3 个月，跑了 3600 公里，要不还是写点东西吧。
+Looking at my activity log, I started running in April 2024. Fifteen months and 3,600 km later, I figured I should write something after all.
 
-## 为什么开始跑步
+## Why I started running
 
-可能大多数人是因为“减肥”开始跑步，但对我来说这不是主要目的。体重确实从接近 170 斤（截图中没有，那时候都不想上秤）降到现在 130 斤上下徘徊。
+Most people probably start running to lose weight, but that wasn't my main goal. My weight did drop from almost 85 kg (not in the screenshot, I didn't even want to step on the scale back then) to around 65 kg now.
 
 <div style="text-align: center;">
   <img src="https://p.madcodelife.com/blog/2025/09/713a3099786c6c8824c14476ee9452ac.JPG" width="375" alt="Weight">
 </div>
 
-但实际上我就是为了给自己培养一个习惯，或者兴趣爱好。在跑步之前，别人问我平时爱好是什么，我好像回答不出来。
+What I really wanted was to build a habit, a hobby. Before I ran, when people asked what my hobbies were, I couldn't come up with an answer.
 
-对于我来说，减肥只是跑步的副作用，而不是目的，只不过对于别人来说，最直观的变化就是体重，我总不能当着人面开表，当场跑五公里吧。
+For me, weight loss is a side effect of running, not the purpose. It's just that weight is the most visible change to others; I can't exactly start my watch and run 5 km in front of them.
 
-当时我还认真做了不少功课，甚至研究过“什么乐器适合初学者”。至于最后为什么选择了跑步：
+I did a fair amount of homework back then, and even researched "which instruments are good for beginners". As for why I ended up choosing running:
 
-1. 不挑场地，不需要队友。
-2. **便宜**，一双鞋，短裤，背心足矣。
-3. 主要还是便宜。
+1. Any place will do, and you don't need teammates.
+2. **It's cheap**: a pair of shoes, shorts and a singlet are all you need.
+3. Mostly, it's cheap.
 
-## 为什么喜欢上了跑步
+## Why I fell in love with it
 
-这个问题我也答不出个所以然，就去问了下 AI。
+I couldn't really explain this one, so I asked an AI.
 
-> 神经化学与“跑者高潮”
+> Neurochemistry and the "runner's high"
 >
-> - 内源性大麻素系统：中等强度持续跑步可明显升高血浆花生四烯乙醇胺（AEA），通过 CB1 受体降低焦虑与痛觉，带来愉悦与宁静感。动物与人类研究都支持是“跑者高潮”的关键。
-> - 内啡肽/内源性阿片：PET 研究显示长跑中枢μ-阿片受体占用度升高，增强镇痛与愉悦。与内源性大麻素共同塑造积极体验。
-> - 多巴胺回路：跑步完成目标（公里数、配速）带来奖赏预测误差，激活中脑—纹状体通路，形成“做—爽—更想做”的正反馈。
-> - 单胺与营养因子：去甲肾上腺素、血清素上调改善情绪与注意；BDNF 等神经营养因子上升，增强可塑性与抗压能力。
+> - Endocannabinoid system: sustained moderate-intensity running significantly raises plasma anandamide (AEA), which acts on CB1 receptors to reduce anxiety and pain, bringing a sense of pleasure and calm. Both animal and human studies support it as key to the "runner's high".
+> - Endorphins / endogenous opioids: PET studies show increased central μ-opioid receptor occupancy during long runs, enhancing pain relief and pleasure. Together with endocannabinoids, they shape the positive experience.
+> - Dopamine circuits: hitting running goals (distance, pace) produces reward prediction errors that activate the mesostriatal pathway, forming a positive "do it, feel good, want more" loop.
+> - Monoamines and neurotrophic factors: upregulated norepinephrine and serotonin improve mood and attention; rising BDNF and other neurotrophic factors increase plasticity and stress resilience.
 
-依我之见，跑步确实让人上瘾。我觉得跑步是个孤独的运动，不需要队友，只有自己，只有自己的呼吸、心跳和脚步。戴上耳机，选一个感兴趣的播客或者歌单。一个小时的跑步结束后，你甚至想不起来这段时间具体想了些什么，只记得与陌生跑友或路人的擦肩而过。
+In my view, running really is addictive. It's a solitary sport: no teammates, just you, your breathing, your heartbeat and your footsteps. Put on headphones and pick a podcast or playlist you like. After an hour-long run, you can't even remember what you were thinking about, only the strangers and fellow runners you passed along the way.
 
-## 跑得怎么样
+## How it's going
 
-一共参加了两场比赛：一次半马（1:33:29），一次全马（3:09:58）。可以在 [Running Page](https://www.madcodelife.com/running) 查看我的比赛和 Strava 记录。
+I've run two races so far: a half marathon (1:33:29) and a full marathon (3:09:58). You can find my races and Strava records on the [Running Page](https://www.madcodelife.com/running).
 
 <div style="text-align: center;">
   <img src="https://p.madcodelife.com/blog/2025/09/e7f605fb06358817fd9ca0e3d9f8631f.PNG" width="375" alt="Record">
 </div>
 
-在我认识的同事、朋友，以及平时在 [成都新川之心公园](https://parco.run/chengdu/singapore-sichuan-park) 跑步的跑友中，我自觉算是练得比较狠的。可放到小红书一对比，发现自己还没入门。随着马拉松运动的普及，大众水准越来越高，还得继续练。
+Among my colleagues, friends, and the runners I see at [Chengdu Xinchuan Heart Park](https://parco.run/chengdu/singapore-sichuan-park), I consider myself one of the harder trainers. But compared with people on Xiaohongshu, I've barely gotten started. As marathons get more popular, the overall level keeps rising, so I need to keep training.
 
-“跑步是一项以年为单位的运动。”这句话是我从「[黑影儿 TV](https://space.bilibili.com/38995440)」那里听来的。重点推荐下他的频道：不同于所谓的“跑步网红”，他刚刚达成了**七星跑者**的成就，非常了不起。
+"Running is a sport measured in years." I picked up that line from [Heiying'er TV](https://space.bilibili.com/38995440), whose channel I highly recommend. Unlike so-called "running influencers", he just became a **Seven Star Finisher** (all seven World Marathon Majors), which is remarkable.
 
-## 后面怎么跑
+## What's next
 
-还是想追求一下成绩。我自评算是一个好胜心比较强的人，目标是在 30 岁“破 3”（马拉松跑进三个小时）。还有一年半时间，加油吧。
+I still want to chase results. I'm a pretty competitive person, and my goal is to run a sub-3 marathon by the time I'm 30. I have a year and a half left, so let's go.
 
-目前正在备战家乡的一场半程马拉松，10 月 26 日的涪陵白鹤梁半程马拉松。起点就在家门口一公里的地方。目标是 1:30（半马跑进一个半小时）。
+Right now I'm preparing for a half marathon in my hometown, the Fuling Baiheliang Half Marathon on October 26. The start line is just a kilometer from my home. The goal is 1:30.
 
-上一次的半马算是瞎猫碰上死耗子，我现在都不知道怎么跑下来的。当时也没有系统训练，就是跑了半年感觉自己行了。最近这两三周备赛的状态也不错，强度基本都能顶上去，达成目标问题应该不算太大。
+My last half marathon was pure luck; I still don't know how I pulled it off. I hadn't trained systematically, I'd just been running for six months and felt ready. Training has gone well these past two or three weeks and I can mostly handle the intensity, so hitting the goal shouldn't be too much of a problem.
 
-## 结尾
+## Wrapping up
 
-欢迎关注我的 [Strava](https://www.strava.com/athletes/133976397)，一起跑起来。
+Follow me on [Strava](https://www.strava.com/athletes/133976397) and let's run together.
 
-最后用村上春树《当我谈跑步时，我在谈些什么》里的一句话作为结尾：
+I'll close with a passage from Haruki Murakami's _What I Talk About When I Talk About Running_:
 
-> 不管怎样，反正得坚持跑步。每日跑步对我来说好比生命线，不能说忙就抛开不管，或者停下不跑了。忙就中断跑步的话，我一辈子都无法跑步。坚持跑步的理由不过一丝半点，中断跑步的理由却足够装满一辆大型载重卡车。我们只能将那“一丝半点的理由”一个个慎之又慎地不断打磨。见缝插针，得空儿就孜孜不倦地打磨它们。
+> Anyway, I'll just keep on running. Running every day is a kind of lifeline for me, so I'm not going to lay off or quit just because I'm busy. If I used being busy as an excuse not to run, I'd never run again. I have only a few reasons to keep on running, and a truckload of reasons to quit. All I can do is keep those few reasons nicely polished.

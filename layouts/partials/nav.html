@@ -1,0 +1,17 @@
+{{ range .Site.Menus.main }}
+<a href="{{ .URL }}">{{ .Name }}</a>
+{{ end }}
+{{- /*
+  语言切换：优先跳到当前页面的对应译文，没有译文时回到该语言首页。
+*/ -}}
+{{- $page := . -}}
+{{- range hugo.Sites -}}
+  {{- if ne .Language.Lang site.Language.Lang -}}
+    {{- $lang := .Language.Lang -}}
+    {{- $href := .Home.RelPermalink -}}
+    {{- range $page.Translations -}}
+      {{- if eq .Language.Lang $lang -}}{{- $href = .RelPermalink -}}{{- end -}}
+    {{- end }}
+<a href="{{ $href }}" hreflang="{{ $lang }}" lang="{{ $lang }}">{{ .Language.Label }}</a>
+  {{- end -}}
+{{- end }}

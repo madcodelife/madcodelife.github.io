@@ -1,0 +1,30 @@
+# 主题与自定义模板里的界面文案，中文见 zh.toml
+[filteringFor]
+other = 'Filtering for "{{ . }}"'
+[removeFilter]
+other = "Remove filter"
+[noPosts]
+other = "No posts yet"
+
+[runYearKm]
+other = "{{ . }} km"
+[runYearCount]
+other = "{{ . }} runs"
+[runYearPace]
+other = "{{ . }} avg pace"
+[runTotalKm]
+other = "Total km"
+[runTotalCount]
+other = "Total runs"
+[runDate]
+other = "Date"
+[runDistance]
+other = "Distance"
+[runDuration]
+other = "Time"
+[runPace]
+other = "Pace"
+[runHeartRate]
+other = "HR"
+[runFallback]
+other = 'Running data is unavailable right now, check <a href="{{ . }}">Strava</a> instead.'

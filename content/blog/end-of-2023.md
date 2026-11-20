@@ -6,20 +6,20 @@ categories: ["thoughts"]
 comments: true
 ---
 
-距离上次写文章已经快一年了，之前居然立下 flag，每周更新一篇文章，事实上去年一共写了一篇 😂。
+It's been almost a year since my last post. I once vowed to publish one post every week; in reality I wrote exactly one last year 😂.
 
-还有 2 天就是大年三十了，过去一年发生了不少大事，有好事当然也有坏事，最重要的就是家里迎来了一个新的成员，七七出生了，给家里带了不少欢声笑语，当然，不可避免的也会有烦恼，第一次为人父母，还得摸着石头过河，不求其他，只要他健健康康，开开心心的长大就好了，坏事就不用记录了，过去的也就过去吧，总的来说是收获很大的一年。
+Chinese New Year's Eve is two days away. A lot happened over the past year, good and bad. The biggest news is that our family welcomed a new member: Qiqi was born. He has brought plenty of laughter, and inevitably some worries too. We're first-time parents, figuring it out as we go. All I ask is that he grows up healthy and happy. No need to dwell on the bad stuff, what's past is past. All in all, it was a rewarding year.
 
-今天最后一天在公司坐班了，明天 remote 一天，凌晨一早就赶路回丈母娘家，去年老婆怀孕没有回家过年，今年带着小朋友回家玩玩，不得不说，带着小朋友是真麻烦啊。
+Today is my last day in the office. Tomorrow I'll work remotely, then we'll set off before dawn for my in-laws' place. We didn't go back for New Year last year because my wife was pregnant, so this year we're bringing the little one home. I have to say, traveling with a baby is a real hassle.
 
-新的一年，还是给自己立一些目标：
+A few goals for the new year:
 
-- [ ] 养成阅读的习惯，至少读 6 本书吧（两个月一本，想想还行）
-- [ ] 继续学习 Rust（去年被业务需求狠狠的压榨了）
-- [ ] 发布一个有意思的网站
+- [ ] Build a reading habit and read at least 6 books (one every two months sounds doable)
+- [ ] Keep learning Rust (work squeezed me dry last year)
+- [ ] Launch an interesting website
 
-想想还是不要立太多 flag 了，不然又像去年一样，哈哈。
+On second thought, I shouldn't set too many goals, or it'll end up like last year, haha.
 
-写的时候发现这篇文章不应该叫 End of 2023，应该叫 Start of 2024，最后放一张七七的照片，新的一年，继续加油吧！
+While writing this, I realized it shouldn't be called End of 2023 but Start of 2024. Here's a photo of Qiqi to wrap up. New year, keep going!
 
 ![77](https://assets.madcodelife.com/blog/2024/03/8d2bb671d84df3ec2613d1d3565e2453.jpg)

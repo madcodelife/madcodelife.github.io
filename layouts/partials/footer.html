@@ -1,4 +1,12 @@
 {{ if and site.Params.giscus.repo (eq .Params.comments true) }}
+{{- /*
+  评论串按中文标题归档：文章最早只有中文版，已有的 discussion 都以中文标题命名，
+  英文译文也指向同一个 discussion，两种语言的读者看到的是同一份评论。
+*/ -}}
+{{- $term := .Title -}}
+{{- range .AllTranslations -}}
+  {{- if eq .Language.Lang "zh" -}}{{- $term = .Title -}}{{- end -}}
+{{- end }}
 <section id="comments">
   <!-- Giscus script start -->
   <script
@@ -8,12 +16,13 @@
     data-category="{{ site.Params.giscus.category }}"
     data-category-id="{{ site.Params.giscus.categoryId }}"
     data-mapping="{{ site.Params.giscus.mapping | default (print `pathname`) }}"
+    data-term="{{ $term }}"
     data-strict="{{ site.Params.giscus.strict | default (print `1`) }}"
     data-reactions-enabled="{{ site.Params.giscus.reactionsEnabled | default (print `0`) }}"
     data-emit-metadata="{{ site.Params.giscus.emitMetadata | default (print `0`) }}"
     data-input-position="{{ site.Params.giscus.inputPosition | default (print `top`) }}"
     data-theme="{{ site.Params.giscus.theme | default (print `light`) }}"
-    data-lang="{{ site.Params.giscus.lang | default (print `en`) }}"
+    data-lang="{{ site.Params.giscusLang | default (print `en`) }}"
     data-loading="{{ site.Params.giscus.loading | default (print `lazy`) }}"
     crossorigin="anonymous"
     async
